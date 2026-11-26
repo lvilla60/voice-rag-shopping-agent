@@ -38,7 +38,20 @@ Run scenarios in a disposable copy of your own generated dataset and results whe
 
 Outside Colab, notebook setup uses the parent of the current working directory as the project directory. Start the Jupyter kernel with its working directory inside `lab4_solution/notebooks_public/` or `lab4_solution/notebooks/`. Set `LAB4_DATA_DIR` to the absolute path of the sibling `data/` directory before starting the kernel. The default calculated by `config.py` is `lab4_solution/data/`.
 
-The local implementation README documents the existing uv, test and Apple Silicon commands. Its default dependency workflow requires the original dependency manifest. The packaging scripts remain local. In particular, `lab4_solution/scripts/empaquetar_drive.sh` reads from `lab4_solution/data/` because it sets `D="$SRC/data"`, while the delivered project has `data/` beside `lab4_solution/`. Assemble the Drive layout directly. The sharing script also expects separate institutional and run artifacts and copies materials that are excluded from publication.
+## Preparing packages locally
+
+Run the following from the repository root using Bash, Git and Python 3.8 or later. Both scripts resolve inputs from their own location. An optional final argument names a new folder under `dist/`. Use `--help` for syntax and `--dry-run` to list source and destination paths before writing.
+
+~~~bash
+bash lab4_solution/scripts/empaquetar_compartir.sh --dry-run
+bash lab4_solution/scripts/empaquetar_compartir.sh
+bash lab4_solution/scripts/empaquetar_drive.sh --dry-run
+bash lab4_solution/scripts/empaquetar_drive.sh
+~~~
+
+The sharing script builds `dist/para_compartir/lab4/` and `lab4.zip` alongside it from the exact public file rules in `.gitignore`. The Drive script builds `dist/para_drive/lab4/` with an empty `data/` sibling of `lab4_solution/` and copies the reviewed notebooks into `lab4_solution/notebooks/`. Upload this `lab4/` folder to `MyDrive/` for Colab. On a fresh dataset, start with notebook 01.
+
+For a local reproduction package, `--include-data` adds the prepared catalog, queries, judgments, manifest and two recorded E5 indexes from the sibling `data/`. Independently, `--include-private-audio` adds the reference and the 25 recorded user turns. Both options can be combined. These opt-in folders carry a `-PRIVATE` suffix followed by the selected inputs and are unsuitable for public distribution. The default packages exclude recordings and raw traces. Each build requires a new destination.
 
 ## Voice inputs and repeatability
 

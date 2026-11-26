@@ -10,9 +10,11 @@
 !/lab4_solution/src/
 !/lab4_solution/src/asistente_compras/
 !/lab4_solution/tests/
+!/lab4_solution/scripts/
 
 # Repository landing pages and ignore policy
 !/.gitignore
+!/.gitattributes
 !/LEEME.md
 !/README.md
 
@@ -42,6 +44,8 @@
 
 # Application source, tests and dependency files
 !/lab4_solution/pyproject.toml
+!/lab4_solution/scripts/empaquetar_compartir.sh
+!/lab4_solution/scripts/empaquetar_drive.sh
 !/lab4_solution/src/asistente_compras/__init__.py
 !/lab4_solution/src/asistente_compras/agent.py
 !/lab4_solution/src/asistente_compras/cli.py
@@ -79,7 +83,6 @@
 /lab4_solution/notebooks/
 /lab4_solution/data/
 /lab4_solution/PROCESO.md
-/lab4_solution/scripts/
 
 # Credentials and local configuration.
 /.aws/

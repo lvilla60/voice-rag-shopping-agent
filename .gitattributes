@@ -1,0 +1,2 @@
+lab4_solution/scripts/empaquetar_compartir.sh text eol=lf
+lab4_solution/scripts/empaquetar_drive.sh text eol=lf

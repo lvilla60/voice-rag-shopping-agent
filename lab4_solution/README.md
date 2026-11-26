@@ -59,4 +59,4 @@ Si el entorno editable falla en una carpeta sincronizada por iCloud, el problema
 - `store.py` valida precios, cantidades, presupuesto, stock y confirmaciones en SQLite.
 - `scenarios.py` define los 20 casos reproducibles. `voice.py` y `cli.py` cubren la transcripción, síntesis, evaluación y grabación.
 
-Los empaquetadores originales se conservan localmente. El empaquetador de Drive espera `data/` dentro de `lab4_solution/`; la estructura entregada usa carpetas hermanas. La guía de reproducción describe el montaje manual.
+Los scripts de Bash en `scripts/` preparan un ZIP público o la carpeta de Colab con `data/` y `lab4_solution/` al mismo nivel. Ambos admiten `--dry-run`. La [guía de reproducción](../docs/REPRODUCIBILITY.md) describe los destinos y las opciones para datos y audio privados.
