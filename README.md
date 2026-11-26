@@ -57,16 +57,23 @@ Use a Drive folder named `MyDrive/lab4/` with `data/` and `lab4_solution/` as si
 | [`lab4_solution/src/asistente_compras/`](lab4_solution/src/asistente_compras/) | Application package |
 | [`lab4_solution/tests/`](lab4_solution/tests/) | Existing unit tests |
 | [`lab4_solution/notebooks_public/`](lab4_solution/notebooks_public/) | Seven notebooks, with reviewed Colab outputs in 00, 03, 05 and 06 |
+| [`lab4_solution/scripts/`](lab4_solution/scripts/) | Distribution and Colab packaging utilities |
 | [`lab4_solution/uv.lock`](lab4_solution/uv.lock) | Recorded dependency versions and source hashes |
 
-The proposed set includes reviewed results in Markdown and SVG. Original notebooks, catalogs, indexes, recordings, conversation traces and academic material remain local. The original voice measurements require the original recordings. A new authorized reference and new scenario recordings support replication of the methodology. [Data availability and rights](docs/DATA_AVAILABILITY.md)
+This repository includes reviewed results in Markdown and SVG. Original notebooks, catalogs, indexes, recordings, conversation traces and academic material remain local. The original voice measurements require the original recordings. A new authorized reference and new scenario recordings support replication of the methodology. [Data availability and rights](docs/DATA_AVAILABILITY.md)
 
-## References and acknowledgments
+## Acknowledgments
 
-- Reddy et al. (2022), *Shopping Queries Dataset: A Large-Scale ESCI Benchmark for Improving Product Search*.
-- Cormack, Clarke and Büttcher (2009), *Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods*.
-- Wang et al. (2024), *Multilingual E5 Text Embeddings: A Technical Report*.
-- Radford et al. (2022), *Robust Speech Recognition via Large-Scale Weak Supervision*.
-- Desplanques, Thienpondt and Demuynck (2020), *ECAPA-TDNN: Emphasized Channel Attention, Propagation and Aggregation in TDNN Based Speaker Verification*.
+- Dataset — [Amazon ESCI](https://github.com/amazon-science/esci-data)
+- Retrieval and language models — [Multilingual E5](https://huggingface.co/intfloat/multilingual-e5-base), [BGE Reranker](https://huggingface.co/BAAI/bge-reranker-v2-m3), and [Qwen](https://github.com/QwenLM)
+- Speech — [Whisper](https://github.com/openai/whisper), [XTTS-v2](https://huggingface.co/coqui/XTTS-v2), and [SpeechBrain](https://github.com/speechbrain/speechbrain)
+- Libraries — [PyTorch](https://pytorch.org/) and [Hugging Face Transformers](https://github.com/huggingface/transformers)
 
-The existing project README credits **Carlos Irazabal**. The complete Group 8 contributor list and the public software license remain to be confirmed by the authors.
+## Contributors
+
+This project was developed by Group 8 as part of the Deep Learning course (MCD8016) at UTEC Posgrado.
+
+- Carlos Irazabal
+- Lucio Villa Ramos
+- Manuel Fernando Polo Castillo
+- Gavino Vicente Maccerhua De la Cruz
