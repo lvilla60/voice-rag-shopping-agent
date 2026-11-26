@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="380" viewBox="0 0 1060 380" role="img" aria-labelledby="title desc">
+<title id="title">Hybrid retrieval</title>
+<desc id="desc">Spanish BM25 and normalized E5 each retrieve up to 200 products. Reciprocal Rank Fusion with constant 60 combines rankings. BGE reranks the fused top 50, and catalog references are returned to the agent.</desc>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1060" height="380" rx="0" fill="#FFFFFF"/>
+<rect x="45" y="25" width="42" height="4" rx="2" fill="#087C79"/>
+<text x="45" y="61" font-size="30" fill="#132842" text-anchor="start" font-weight="700">Hybrid retrieval</text>
+<text x="46" y="89" font-size="16" fill="#425871" text-anchor="start" font-weight="400">Agent search retrieves from the entire 11,463-product catalog.</text>
+<rect x="45" y="165" width="155" height="74" rx="10" fill="#F2F6FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="59" y="194" font-size="17" fill="#132842" text-anchor="start" font-weight="700">User query</text>
+<text x="59" y="216" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Spanish text</text>
+<rect x="250" y="113" width="216" height="82" rx="10" fill="#E8F1FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="264" y="142" font-size="17" fill="#2868A1" text-anchor="start" font-weight="700">Spanish BM25</text>
+<text x="264" y="164" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Title and brand · top 200</text>
+<rect x="250" y="221" width="216" height="82" rx="10" fill="#E8F1FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="264" y="250" font-size="17" fill="#2868A1" text-anchor="start" font-weight="700">Multilingual E5</text>
+<text x="264" y="272" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Title, brand, bullets · top 200</text>
+<rect x="519" y="165" width="144" height="77" rx="10" fill="#E8F5F3" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="533" y="194" font-size="17" fill="#087C79" text-anchor="start" font-weight="700">RRF</text>
+<text x="533" y="216" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Rank constant 60</text>
+<rect x="708" y="165" width="145" height="77" rx="10" fill="#E8F5F3" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="722" y="194" font-size="17" fill="#087C79" text-anchor="start" font-weight="700">BGE reranker</text>
+<text x="722" y="216" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Score fused top 50</text>
+<rect x="895" y="165" width="120" height="77" rx="10" fill="#F2F6FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="909" y="194" font-size="17" fill="#132842" text-anchor="start" font-weight="700">Results</text>
+<text x="909" y="216" font-size="14" fill="#425871" text-anchor="start" font-weight="400">To agent</text>
+<polyline points="200,201 223,201 223,153 246,153" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="250,153 241,149 241,157" fill="#2868A1"/>
+<polyline points="223,201 223,260 246,260" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="250,260 241,256 241,264" fill="#2868A1"/>
+<polyline points="466,153 487,153 487,184 515,184" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="519,184 510,180 510,188" fill="#2868A1"/>
+<polyline points="466,260 487,260 487,221 515,221" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="519,221 510,217 510,225" fill="#2868A1"/>
+<polyline points="663,203 704,203" fill="none" stroke="#087C79" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="708,203 699,199 699,207" fill="#087C79"/>
+<polyline points="853,203 891,203" fill="none" stroke="#087C79" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="895,203 886,199 886,207" fill="#087C79"/>
+<text x="45" y="346" font-size="16" fill="#425871" text-anchor="start" font-weight="400">Benchmark ranking uses a fixed set of annotated candidates for each query.</text>
+</g>
+</svg>

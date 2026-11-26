@@ -1,0 +1,4 @@
+model,scenarios,passed,recorded_violations,mean_agent_seconds_per_turn_equal_scenario_weight
+Qwen2.5-7B,20,8,1,6.182044
+Qwen3-8B,20,14,1,8.172690
+Qwen3.5-9B,20,16,0,11.583577

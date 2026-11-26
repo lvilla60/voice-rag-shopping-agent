@@ -1,0 +1,17 @@
+metric,value,unit
+recorded_user_turns,25,count
+scenarios_per_input_condition,6,count
+audio_input_passed,3,count
+correct_text_passed,3,count
+mean_normalized_asr_wer,0.000000,ratio
+mean_retranscribed_tts_wer,0.052433,ratio
+mean_ecapa_cosine,0.815948,cosine
+mean_latency,21.338638,s
+median_latency,20.757139,s
+p90_latency,29.160341,s
+initial_loading_and_warmup,4.029268,min
+peak_pytorch_allocated_integration_run,10.89,GiB
+mean_stage_asr,0.261048,s
+mean_stage_llm,10.935130,s
+mean_stage_tools_and_overhead,0.127768,s
+mean_stage_tts,10.014693,s

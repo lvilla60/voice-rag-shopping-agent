@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="370" viewBox="0 0 1060 370" role="img" aria-labelledby="title desc">
+<title id="title">Voice latency by stage</title>
+<desc id="desc">Mean ASR time 0.26 seconds, LLM 10.94 seconds, tools and overhead 0.13 seconds and TTS 10.01 seconds. Total 21.34 seconds, median 20.76 seconds, P90 29.16 seconds.</desc>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1060" height="370" rx="0" fill="#FFFFFF"/>
+<rect x="45" y="25" width="42" height="4" rx="2" fill="#087C79"/>
+<text x="45" y="61" font-size="30" fill="#132842" text-anchor="start" font-weight="700">Voice latency by stage</text>
+<text x="46" y="89" font-size="16" fill="#425871" text-anchor="start" font-weight="400">Mean wall time across 25 recorded turns · Colab L4</text>
+<polyline points="62,138 62,213" fill="none" stroke="#CCD9E3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="62" y="238" font-size="13" fill="#425871" text-anchor="middle" font-weight="400">0 s</text>
+<polyline points="249,138 249,213" fill="none" stroke="#CCD9E3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="249" y="238" font-size="13" fill="#425871" text-anchor="middle" font-weight="400">5 s</text>
+<polyline points="436,138 436,213" fill="none" stroke="#CCD9E3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="436" y="238" font-size="13" fill="#425871" text-anchor="middle" font-weight="400">10 s</text>
+<polyline points="623,138 623,213" fill="none" stroke="#CCD9E3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="623" y="238" font-size="13" fill="#425871" text-anchor="middle" font-weight="400">15 s</text>
+<polyline points="810,138 810,213" fill="none" stroke="#CCD9E3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="810" y="238" font-size="13" fill="#425871" text-anchor="middle" font-weight="400">20 s</text>
+<polyline points="997,138 997,213" fill="none" stroke="#CCD9E3" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="997" y="238" font-size="13" fill="#425871" text-anchor="middle" font-weight="400">25 s</text>
+<rect x="62" y="160" width="9.7632" height="27" rx="0" fill="#75A6C5"/>
+<rect x="71.7632" y="160" width="408.974" height="27" rx="0" fill="#2868A1"/>
+<rect x="480.737" y="160" width="4.77852" height="27" rx="0" fill="#A05825"/>
+<rect x="485.516" y="160" width="374.55" height="27" rx="0" fill="#087C79"/>
+<text x="860.065" y="149" font-size="16" fill="#132842" text-anchor="middle" font-weight="700">21.34 s mean total</text>
+<rect x="62" y="265" width="15" height="15" rx="2" fill="#75A6C5"/>
+<text x="84" y="278" font-size="16" fill="#132842" text-anchor="start" font-weight="400">ASR  0.26 s</text>
+<rect x="242" y="265" width="15" height="15" rx="2" fill="#2868A1"/>
+<text x="264" y="278" font-size="16" fill="#132842" text-anchor="start" font-weight="400">LLM  10.94 s</text>
+<rect x="431" y="265" width="15" height="15" rx="2" fill="#A05825"/>
+<text x="453" y="278" font-size="16" fill="#132842" text-anchor="start" font-weight="400">Tools and overhead  0.13 s</text>
+<rect x="744" y="265" width="15" height="15" rx="2" fill="#087C79"/>
+<text x="766" y="278" font-size="16" fill="#132842" text-anchor="start" font-weight="400">TTS  10.01 s</text>
+<text x="62" y="326" font-size="16" fill="#425871" text-anchor="start" font-weight="400">Median  20.76 s</text>
+<text x="305" y="326" font-size="16" fill="#425871" text-anchor="start" font-weight="400">P90  29.16 s</text>
+<text x="497" y="326" font-size="16" fill="#425871" text-anchor="start" font-weight="400">Initial loading and warm-up  4.03 min</text>
+</g>
+</svg>

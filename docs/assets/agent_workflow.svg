@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="444" viewBox="0 0 1060 444" role="img" aria-labelledby="title desc">
+<title id="title">Agent workflow</title>
+<desc id="desc">User input and conversation state feed the Qwen planner. Tool dispatch validates arguments and uses retrieval or SQLite. The results return to the planner. If no additional tool is needed, guarded response logic returns a reply or a clarification.</desc>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1060" height="444" rx="0" fill="#FFFFFF"/>
+<rect x="45" y="25" width="42" height="4" rx="2" fill="#087C79"/>
+<text x="45" y="61" font-size="30" fill="#132842" text-anchor="start" font-weight="700">Agent workflow</text>
+<text x="46" y="89" font-size="16" fill="#425871" text-anchor="start" font-weight="400">Each turn can invoke several tools before the assistant returns its final response.</text>
+<rect x="45" y="116" width="220" height="106" rx="10" fill="#F2F6FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="59" y="145" font-size="17" fill="#132842" text-anchor="start" font-weight="700">Input and state</text>
+<text x="59" y="167" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Current user message,</text>
+<text x="59" y="186" font-size="14" fill="#425871" text-anchor="start" font-weight="400">history, cart and quote</text>
+<rect x="327" y="116" width="231" height="106" rx="10" fill="#E8F5F3" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="341" y="145" font-size="17" fill="#087C79" text-anchor="start" font-weight="700">Qwen planner</text>
+<text x="341" y="167" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Select a tool or compose</text>
+<text x="341" y="186" font-size="14" fill="#425871" text-anchor="start" font-weight="400">a reply or clarification</text>
+<rect x="676" y="116" width="339" height="106" rx="10" fill="#E8F1FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="690" y="145" font-size="17" fill="#2868A1" text-anchor="start" font-weight="700">Tool dispatch and validation</text>
+<text x="690" y="167" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Validate arguments and apply store rules.</text>
+<text x="690" y="186" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Read search results or transaction state.</text>
+<polyline points="265,167 323,167" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="327,167 318,163 318,171" fill="#2868A1"/>
+<polyline points="558,168 672,168" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="676,168 667,164 667,172" fill="#2868A1"/>
+<text x="618" y="150" font-size="14" fill="#2868A1" text-anchor="middle" font-weight="400">tool call</text>
+<polyline points="849,222 849,266 442,266 442,226" fill="none" stroke="#087C79" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="442,222 438,231 446,231" fill="#087C79"/>
+<text x="630" y="291" font-size="14" fill="#087C79" text-anchor="middle" font-weight="400">tool results feed the next planning step</text>
+<rect x="327" y="323" width="231" height="85" rx="10" fill="#E8F5F3" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="341" y="352" font-size="17" fill="#087C79" text-anchor="start" font-weight="700">Response checks</text>
+<text x="341" y="374" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Unsupported claims,</text>
+<text x="341" y="393" font-size="14" fill="#425871" text-anchor="start" font-weight="400">quote presentation</text>
+<rect x="676" y="323" width="339" height="85" rx="10" fill="#F2F6FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="690" y="352" font-size="17" fill="#132842" text-anchor="start" font-weight="700">Reply and updated state</text>
+<text x="690" y="374" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Present the result, surface an error,</text>
+<text x="690" y="393" font-size="14" fill="#425871" text-anchor="start" font-weight="400">or ask for information or confirmation.</text>
+<polyline points="390,222 390,319" fill="none" stroke="#087C79" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="390,323 394,314 386,314" fill="#087C79"/>
+<polyline points="558,365 672,365" fill="none" stroke="#087C79" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="676,365 667,361 667,369" fill="#087C79"/>
+</g>
+</svg>

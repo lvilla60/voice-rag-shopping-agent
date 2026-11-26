@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="502" viewBox="0 0 1060 502" role="img" aria-labelledby="title desc">
+<title id="title">System architecture</title>
+<desc id="desc">Recorded speech goes through Whisper ASR. Text enters directly. The Qwen agent exchanges tool calls and results, keeps conversation state, retrieves catalog products, validates transactions in SQLite and returns text or synthesized speech.</desc>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1060" height="502" rx="0" fill="#FFFFFF"/>
+<rect x="45" y="25" width="42" height="4" rx="2" fill="#087C79"/>
+<text x="45" y="61" font-size="30" fill="#132842" text-anchor="start" font-weight="700">System architecture</text>
+<text x="46" y="89" font-size="16" fill="#425871" text-anchor="start" font-weight="400">Spanish text and speech share a bounded agent and the same simulated store.</text>
+<rect x="45" y="118" width="156" height="66" rx="10" fill="#F2F6FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="59" y="147" font-size="17" fill="#132842" text-anchor="start" font-weight="700">Recorded speech</text>
+<text x="59" y="169" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Spanish audio</text>
+<rect x="45" y="216" width="156" height="66" rx="10" fill="#F2F6FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="59" y="245" font-size="17" fill="#132842" text-anchor="start" font-weight="700">Typed request</text>
+<text x="59" y="267" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Spanish text</text>
+<rect x="237" y="118" width="151" height="66" rx="10" fill="#E8F1FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="251" y="147" font-size="17" fill="#2868A1" text-anchor="start" font-weight="700">Whisper ASR</text>
+<text x="251" y="169" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Text transcript</text>
+<rect x="454" y="151" width="218" height="100" rx="10" fill="#E8F5F3" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="468" y="180" font-size="17" fill="#087C79" text-anchor="start" font-weight="700">Qwen agent</text>
+<text x="468" y="202" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Tool planning and</text>
+<text x="468" y="221" font-size="14" fill="#425871" text-anchor="start" font-weight="400">response validation</text>
+<rect x="770" y="151" width="245" height="100" rx="10" fill="#E8F1FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="784" y="180" font-size="17" fill="#2868A1" text-anchor="start" font-weight="700">Tool dispatcher</text>
+<text x="784" y="202" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Search, state, quote</text>
+<text x="784" y="221" font-size="14" fill="#425871" text-anchor="start" font-weight="400">and confirmation</text>
+<rect x="454" y="326" width="218" height="77" rx="10" fill="#F2F6FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="468" y="355" font-size="17" fill="#132842" text-anchor="start" font-weight="700">Conversation state</text>
+<text x="468" y="377" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Budget, cart, refs, quote</text>
+<rect x="770" y="291" width="245" height="69" rx="10" fill="#F2F6FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="784" y="320" font-size="17" fill="#132842" text-anchor="start" font-weight="700">Hybrid retrieval</text>
+<text x="784" y="342" font-size="14" fill="#425871" text-anchor="start" font-weight="400">BM25, E5, RRF and BGE</text>
+<rect x="770" y="397" width="245" height="80" rx="10" fill="#E8F5F3" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="784" y="426" font-size="17" fill="#087C79" text-anchor="start" font-weight="700">SQLite store</text>
+<text x="784" y="448" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Current prices, inventory,</text>
+<text x="784" y="467" font-size="14" fill="#425871" text-anchor="start" font-weight="400">atomic order validation</text>
+<rect x="45" y="327" width="290" height="77" rx="10" fill="#F2F6FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="59" y="356" font-size="17" fill="#132842" text-anchor="start" font-weight="700">Assistant reply</text>
+<text x="59" y="378" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Display text or synthesize with XTTS-v2</text>
+<polyline points="201,150 233,150" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="237,150 228,146 228,154" fill="#2868A1"/>
+<polyline points="388,150 420,150 420,182 450,182" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="454,182 445,178 445,186" fill="#2868A1"/>
+<polyline points="201,249 420,249 420,225 450,225" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="454,225 445,221 445,229" fill="#2868A1"/>
+<polyline points="672,182 766,182" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="770,182 761,178 761,186" fill="#2868A1"/>
+<polyline points="770,219 676,219" fill="none" stroke="#087C79" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="672,219 681,223 681,215" fill="#087C79"/>
+<text x="720" y="173" font-size="13" fill="#2868A1" text-anchor="middle" font-weight="400">calls</text>
+<text x="720" y="239" font-size="13" fill="#087C79" text-anchor="middle" font-weight="400">results</text>
+<polyline points="562,326 562,255" fill="none" stroke="#087C79" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="562,251 558,260 566,260" fill="#087C79"/>
+<polyline points="885,251 885,287" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="885,291 889,282 881,282" fill="#2868A1"/>
+<polyline points="1015,198 1034,198 1034,438 1019,438" fill="none" stroke="#087C79" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1015,438 1024,442 1024,434" fill="#087C79"/>
+<polyline points="488,251 488,291 367,291 367,365 339,365" fill="none" stroke="#087C79" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="335,365 344,369 344,361" fill="#087C79"/>
+</g>
+</svg>

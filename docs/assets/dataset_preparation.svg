@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="409" viewBox="0 0 1060 409" role="img" aria-labelledby="title desc">
+<title id="title">Dataset preparation</title>
+<desc id="desc">Amazon ESCI data are filtered to 218774 Spanish query–product pairs. With seed 42, 200 development and 250 test queries define a catalog of 11463 products. Relevance judgments are stored separately for evaluation.</desc>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1060" height="409" rx="0" fill="#FFFFFF"/>
+<rect x="45" y="25" width="42" height="4" rx="2" fill="#087C79"/>
+<text x="45" y="61" font-size="30" fill="#132842" text-anchor="start" font-weight="700">Dataset preparation</text>
+<text x="46" y="89" font-size="16" fill="#425871" text-anchor="start" font-weight="400">ESCI reduced Spanish subset · seeded selection and isolated relevance annotations</text>
+<rect x="45" y="113" width="267" height="75" rx="10" fill="#F2F6FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="59" y="142" font-size="17" fill="#132842" text-anchor="start" font-weight="700">ESCI source</text>
+<text x="59" y="164" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Examples and product Parquet</text>
+<rect x="381" y="113" width="255" height="75" rx="10" fill="#E8F1FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="395" y="142" font-size="17" fill="#2868A1" text-anchor="start" font-weight="700">Filter inputs</text>
+<text x="395" y="164" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Spanish locale and reduced subset</text>
+<rect x="704" y="113" width="311" height="75" rx="10" fill="#E8F5F3" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="718" y="142" font-size="17" fill="#087C79" text-anchor="start" font-weight="700">Sample by query ID</text>
+<text x="718" y="164" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Seed 42 · retain queries with relevance</text>
+<polyline points="312,152 377,152" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="381,152 372,148 372,156" fill="#2868A1"/>
+<polyline points="636,152 700,152" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="704,152 695,148 695,156" fill="#2868A1"/>
+<rect x="45" y="267" width="276" height="94" rx="10" fill="#E8F1FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="59" y="296" font-size="17" fill="#2868A1" text-anchor="start" font-weight="700">Development split</text>
+<text x="59" y="318" font-size="14" fill="#425871" text-anchor="start" font-weight="400">200 queries from train</text>
+<text x="59" y="337" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Choose retrieval settings</text>
+<rect x="392" y="267" width="276" height="94" rx="10" fill="#E8F1FA" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="406" y="296" font-size="17" fill="#2868A1" text-anchor="start" font-weight="700">Held-out test split</text>
+<text x="406" y="318" font-size="14" fill="#425871" text-anchor="start" font-weight="400">250 queries · 6,615 judgments</text>
+<text x="406" y="337" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Score candidates in evaluation</text>
+<rect x="739" y="267" width="276" height="94" rx="10" fill="#E8F5F3" stroke="#CCD9E3" stroke-width="1.25"/>
+<text x="753" y="296" font-size="17" fill="#087C79" text-anchor="start" font-weight="700">Catalog for inference</text>
+<text x="753" y="318" font-size="14" fill="#425871" text-anchor="start" font-weight="400">11,463 distinct products</text>
+<text x="753" y="337" font-size="14" fill="#425871" text-anchor="start" font-weight="400">Cleaned text · synthetic store</text>
+<polyline points="857,188 857,224 183,224 183,263" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="183,267 187,258 179,258" fill="#2868A1"/>
+<polyline points="530,224 530,263" fill="none" stroke="#2868A1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="530,267 534,258 526,258" fill="#2868A1"/>
+<polyline points="857,224 877,224 877,263" fill="none" stroke="#087C79" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="877,267 881,258 873,258" fill="#087C79"/>
+<text x="45" y="390" font-size="15" fill="#425871" text-anchor="start" font-weight="400">218,774 filtered query–product pairs  ·  Relevance labels are outside the agent inference path.</text>
+</g>
+</svg>
